@@ -1,3 +1,5 @@
+#!/usr/bin/pwsh
+
 Param(
     [string]$Path = $Profile.CurrentUserCurrentHost,
     [string]$ForegroundColor = "Green",
