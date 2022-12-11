@@ -80,7 +80,6 @@ for ($i = 1; $i -le 100 ; $i++) {
 Get-ChildItem -Path $subFoldersPaths[0], $subFoldersPaths[1]
 | ForEach-Object {
     $fileName = $_.Name
-    $fileName
     $pattern = "\w+(?<number>\d+)\w*.txt"
     $results = [Regex]::Matches($fileName, $Pattern)
     $number = [int]$results[0].Groups["number"].Value
