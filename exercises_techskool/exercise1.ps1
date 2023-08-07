@@ -18,6 +18,7 @@ function New-SubFolder {
     }
     else {
         Write-Host "$subfolderPath already exists"
+        return "$subfolderPath"
     }
 }
 function New-File {
@@ -53,7 +54,6 @@ foreach ($value in 1..3) {
 }
 
 # Solving part 2
-$subFoldersPaths
 for ($i = 1; $i -le 100 ; $i++) {
     switch ($i) {
         { $i -ge 1 -and $i -le 50 } { 
